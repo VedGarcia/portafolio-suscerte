@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Ananda";
+    font-style: normal;
+    src: url("./assets/fonts/Ananda.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "VictorMono-Light";
+    font-style: normal;
+    src: url("./assets/fonts/VictorMono-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "VictorMono-Bold";
+    font-style: bold;
+    src: url("./assets/fonts/VictorMono-Bold.ttf") format("truetype");
+}
