@@ -5,7 +5,7 @@ const Greeting = () => {
   return (
     <section className="h-screen w-full flex flex-col justify-end items-start p-12">
       <div className="absolute w-full h-screen top-0 left-0 overflow-hidden">
-        <div className="absolute top-0 -left-20 w-[150vw] h-full -z-10 rotate-20">
+        <div className="absolute top-0 -left-20 w-[150vw] h-full z-0 rotate-20">
           {/* Esta animacion se desborda! por ello se coloco doble contenedor para poder estilar de forma correcta */}
           <Threads
             amplitude={2}
@@ -26,7 +26,7 @@ const Greeting = () => {
         strings={["VEd", "Víctor García", "VEd", "Víctor García", "VEd"]}
         typeSpeed={100}
         backSpeed={50}
-        className="text-9xl text-sky-300 font-[VictorMono-Bold]"
+        className="text-9xl text-sky-300 font-[VictorMono-Bold] relative z-10"
       />
 
       <p className="text-6xl text-amber-200 font-[VictorMono-Light]">
