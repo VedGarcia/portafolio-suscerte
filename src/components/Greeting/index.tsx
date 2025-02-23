@@ -4,8 +4,15 @@ import Threads from "./Threads";
 const Greeting = () => {
   return (
     <section className="h-screen w-full flex flex-col justify-end items-start p-12">
-      <div className="absolute top-0 -left-20 w-[150vw] h-full -z-10 rotate-20">
-        <Threads amplitude={2} distance={0.5} enableMouseInteraction={false} />
+      <div className="absolute w-full h-screen top-0 left-0 overflow-hidden">
+        <div className="absolute top-0 -left-20 w-[150vw] h-full -z-10 rotate-20">
+          {/* Esta animacion se desborda! por ello se coloco doble contenedor para poder estilar de forma correcta */}
+          <Threads
+            amplitude={2}
+            distance={0.5}
+            enableMouseInteraction={false}
+          />
+        </div>
       </div>
       <p className="text-5xl text-amber-200 font-[Ananda]">Hola! Soy</p>
       {/* <ReactTyped
@@ -16,7 +23,7 @@ const Greeting = () => {
         className="text-2xl text-amber-200 font-[VictorMono-Light]"
       /> */}
       <ReactTyped
-        strings={["Víctor García", "VEd"]}
+        strings={["VEd", "Víctor García", "VEd", "Víctor García", "VEd"]}
         typeSpeed={100}
         backSpeed={50}
         className="text-9xl text-sky-300 font-[VictorMono-Bold]"
