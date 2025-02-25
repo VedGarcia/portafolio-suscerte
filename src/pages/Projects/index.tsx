@@ -3,21 +3,20 @@ import getProjects from "../../services/get_projects";
 import Layout from "../../components/Layout";
 import Masonry from "../../components/ui/Masonry";
 
-// Interfaz para los datos que vienen de la API (asumiendo que getProjects.getAll() devuelve esto)
+// datos que vienen de la API
 interface ProjectFromApi {
   id: number;
   name: string;
   html_url: string;
-  // ... otras propiedades que tu API pueda tener
 }
 
-// Interfaz para los datos que usaremos en el estado del componente
+//datos que usaremos en el estado del componente
 interface Project {
   id: number;
   name: string;
   html_url: string;
-  image_url: string; // URL de la imagen que agregaremos
-  height: number; // Altura aleatoria que agregaremos
+  image_url: string;
+  height: number;
 }
 
 const Projects: React.FC = () => {
@@ -27,8 +26,8 @@ const Projects: React.FC = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      setIsLoading(true); // Establecer el estado de carga a verdadero al inicio
-      setError(null); // Resetear el estado de error
+      setIsLoading(true);
+      setError(null);
       try {
         const result = await getProjects.getAll();
         if (result && result.data) {
@@ -41,7 +40,7 @@ const Projects: React.FC = () => {
                 html_url: project.html_url,
                 image_url: `https://picsum.photos/id/${project.id
                   .toString()
-                  .substring(0, 2)}/200/300`, // Reemplaza con tu lógica de URL de imagen
+                  .substring(0, 2)}/200/300`,
                 height: randomHeight,
               };
             }
@@ -55,17 +54,16 @@ const Projects: React.FC = () => {
         console.error("Error fetching data: ", err);
         setError("Error fetching data.");
       } finally {
-        setIsLoading(false); // Establecer el estado de carga a falso al finalizar
+        setIsLoading(false);
       }
     };
     fetchData();
   }, []);
 
-  console.log("Projects almacenados en estado: ", projects);
-
   if (isLoading) {
     return (
       <Layout>
+        <h1 className="text-6xl font-[Ananda] text-sky-300 pt-8">Proyectos</h1>
         <p className="text-2xl animate-pulse">Cargando proyectos...</p>
       </Layout>
     );
@@ -74,6 +72,7 @@ const Projects: React.FC = () => {
   if (error) {
     return (
       <Layout>
+        <h1 className="text-6xl font-[Ananda] text-sky-300 pt-8">Proyectos</h1>
         <p className="text-2xl text-red-500">Error: {error}</p>
       </Layout>
     );
@@ -81,10 +80,9 @@ const Projects: React.FC = () => {
 
   return (
     <Layout>
-      <div className="py-12 ">
+      <div className="pb-12">
         <h1 className="text-6xl font-[Ananda] text-sky-300 pt-8">Proyectos</h1>
       </div>
-
       <Masonry data={projects} />
     </Layout>
   );

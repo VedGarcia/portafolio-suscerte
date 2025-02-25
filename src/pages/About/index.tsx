@@ -35,11 +35,11 @@ const About: React.FC = () => {
 
   return (
     <Layout>
-      <section className="w-full h-screen grid grid-cols-5 grid-rows-5 gap-2 overflow-hidden">
+      <section className="w-full h-[90vh] grid grid-cols-5 grid-rows-5 gap-2 overflow-hidden">
         <div className="col-span-5 pt-8">
           <h1 className="text-6xl font-[Ananda] text-sky-300">Sobre mí</h1>
         </div>
-        <div className="row-span-4 col-start-5 row-start-2">
+        <nav className="row-span-4 col-start-5 row-start-2 z-20">
           {Object.keys(info).map((key) => (
             <button
               key={key}
@@ -55,8 +55,8 @@ const About: React.FC = () => {
               {info[key].titulo}
             </button>
           ))}
-        </div>
-        <div className="col-span-4 row-span-4 row-start-2 overflow-auto font-[VictorMono-light] text-amber-300 relative">
+        </nav>
+        <div className="p-4 col-span-4 row-span-4 row-start-2 overflow-auto font-[VictorMono-light] text-amber-300 bg-stone-900/80 relative rounded-lg">
           <h3 className="text-2xl font-bold mb-4 text-sky-300 sticky top-0 bg-blend-color-dodge bg-stone-900">
             {info[selectedPart].titulo}
           </h3>

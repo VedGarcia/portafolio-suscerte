@@ -106,9 +106,9 @@ const Masonry: React.FC<MasonryProps> = ({ data }: MasonryProps) => {
                 backgroundPosition: "center",
               }}
             >
-              <div className="w-full h-16 bg-linear-to-b from-sky-500/60">
+              <div className="w-full h-16 bg-linear-to-b from-amber-400/60">
 
-              <h5 className="text-base p-2 leading-3 font-medium">{item.name}</h5>
+              <h5 className="text-base p-2 leading-3 text-stone-800 font-medium font-[VictorMono-Bold]">{item.name}</h5>
               </div>
             </div>
           </animated.div>
