@@ -1,24 +1,25 @@
 import { useState, useEffect, useMemo, useRef } from "react";
-import { useTransition, a } from "@react-spring/web";
+import { useTransition, animated } from "@react-spring/web";
 
 interface MasonryItem {
-  id: string | number;
+  id: number;
+  name: string;
+  html_url: string;
+  image_url: string;
   height: number;
-  image: string;
 }
 
 interface GridItem extends MasonryItem {
   x: number;
   y: number;
   width: number;
-  height: number;
 }
 
 interface MasonryProps {
   data: MasonryItem[];
 }
 
-function Masonry({ data }: MasonryProps) {
+const Masonry: React.FC<MasonryProps> = ({ data }: MasonryProps) => {
   const [columns, setColumns] = useState<number>(2);
 
   useEffect(() => {
@@ -59,13 +60,12 @@ function Masonry({ data }: MasonryProps) {
     const gridItems = data.map((child) => {
       const column = heights.indexOf(Math.min(...heights));
       const x = (width / columns) * column;
-      const y = (heights[column] += child.height / 2) - child.height / 2;
+      const y = (heights[column] += child.height) - child.height; // Ajuste aquí
       return {
         ...child,
         x,
         y,
         width: width / columns,
-        height: child.height / 2,
       };
     });
     return [heights, gridItems];
@@ -91,24 +91,31 @@ function Masonry({ data }: MasonryProps) {
       style={{ height: Math.max(...heights) }}
     >
       {transitions((style, item) => (
-        <a.div
-          key={item.id}
-          style={style}
-          className="absolute p-[15px] [will-change:transform,width,height,opacity]"
-        >
-          <div
-            className="relative w-full h-full overflow-hidden uppercase text-[10px] leading-[10px] rounded-[4px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] transition duration-300 ease hover:scale-110"
-            style={{
-              backgroundColor: "#ffffff",
-              backgroundImage: `url(${item.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          />
-        </a.div>
+        <a target="_blank" rel="noopener noreferrer" href={item.html_url}>
+          <animated.div
+            key={item.id}
+            style={{ ...style, height: item.height }}
+            className="absolute p-[15px] [will-change:transform,width,height,opacity]"
+          >
+            <div
+              className="relative w-full h-full overflow-hidden uppercase text-[10px] leading-[10px] rounded-[4px] shadow-[0px_10px_50px_-10px_rgba(0,0,0,0.2)] transition duration-300 ease hover:scale-110"
+              style={{
+                backgroundColor: "#ffffff",
+                backgroundImage: `url(${item.image_url})`, //Ajuste aquí
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="w-full h-16 bg-linear-to-b from-sky-500/60">
+
+              <h5 className="text-base p-2 leading-3 font-medium">{item.name}</h5>
+              </div>
+            </div>
+          </animated.div>
+        </a>
       ))}
     </div>
   );
-}
+};
 
 export default Masonry;
