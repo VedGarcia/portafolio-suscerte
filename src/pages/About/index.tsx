@@ -56,8 +56,8 @@ const About: React.FC = () => {
             </button>
           ))}
         </nav>
-        <div className="p-4 col-span-4 row-span-4 row-start-2 overflow-auto font-[VictorMono-light] text-amber-300 bg-stone-900/80 relative rounded-lg">
-          <h3 className="text-2xl font-bold mb-4 text-sky-300 sticky top-0 bg-blend-color-dodge bg-stone-900">
+        <div className="px-4 col-span-4 row-span-4 row-start-2 overflow-auto font-[VictorMono-light] text-amber-300 bg-stone-900/80 relative rounded-lg">
+          <h3 className="text-2xl font-bold py-4 text-sky-300 sticky top-0 bg-blend-color-dodge bg-stone-900">
             {info[selectedPart].titulo}
           </h3>
           {renderContent(info[selectedPart].contenido)}
