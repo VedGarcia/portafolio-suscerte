@@ -1,102 +1,127 @@
 {
-    "parte1": {
-      "titulo": "Presentación Formal",
-      "contenido": "Profesional con amplia experiencia en el área de tecnología, especializado en la gestión de servicios informáticos, desarrollo de soluciones innovadoras y optimización de procesos. Poseo una sólida trayectoria en la administración de infraestructura tecnológica, desarrollo de aplicaciones web y creación de recursos educativos interactivos. Mi enfoque se centra en la aplicación de tecnologías de vanguardia para impulsar la eficiencia y la productividad, con un fuerte compromiso con la excelencia y la mejora continua."
-    },
-    "parte2": {
-      "titulo": "Experiencia Profesional",
-      "contenido": [
-        {
-          "cargo": "Jefe de la Unidad de Informática (encargado) - Fundación de Edificaciones y Dotaciones Educativas (Diciembre 2024 - Actualidad)",
-          "responsabilidades": [
-            "Administración y gestión de servidores: Esto implica conocimientos en la configuración, mantenimiento y seguridad de servidores, lo cual es fundamental para el despliegue y funcionamiento de aplicaciones web.",
-            "Desarrollo y mantenimiento de servicios y aplicaciones: Aquí se destaca tu experiencia en el ciclo de vida del desarrollo de software, desde la concepción hasta el mantenimiento, abarcando diversas gerencias y unidades.",
-            "Soporte técnico: Esta experiencia demuestra tu capacidad para resolver problemas técnicos, lo cual es esencial en el desarrollo web para depurar errores y garantizar la funcionalidad de las aplicaciones.",
-            "Desarrollo y mantenimiento de la página web de la institución: Este punto es crucial, ya que evidencia tu experiencia directa en el desarrollo web, incluyendo la creación y actualización de sitios web."
-          ]
-        },
-        {
-          "cargo": "Coordinador de Servicios Tecnológicos - Ministerio P.P. para la Educación, Edúcate en Venezuela (Octubre 2023 - Actualidad)",
-          "responsabilidades": [
-            "Innovación en tecnologías y desarrollo de recursos educativos: Implementación del motor de videojuegos GODOT: Esto demuestra tu capacidad para aprender y aplicar nuevas tecnologías, lo cual es muy valorado en el desarrollo web, donde la innovación es constante.",
-            "Desarrollo de aplicaciones web con React: Esta experiencia es directamente relevante para el desarrollo web moderno, ya que React es una de las bibliotecas de JavaScript más populares.",
-            "Evaluación y gestión de infraestructura informática: Tu capacidad para identificar y resolver problemas de rendimiento en plataformas educativas demuestra habilidades valiosas en la optimización de aplicaciones web.",
-            "Supervisión de un equipo multidisciplinario: Esto evidencia tus habilidades de liderazgo y gestión de proyectos, que son importantes en el desarrollo web para coordinar equipos de trabajo y cumplir con los plazos.",
-            "Desarrollo y administración de aplicaciones web (JavaScript, React): Este punto refuerza tu experiencia en el desarrollo web con tecnologías modernas y relevantes.",
-            "Creación de recursos educativos en diversas tecnologías y motores gráficos (GODOT y GDevelop): Esto demuestra tu versatilidad y capacidad para trabajar con diferentes herramientas y tecnologías, lo cual es valioso en el desarrollo web."
-          ]
-        },
-        {
-          "cargo": "Experiencias adicionales",
-          "responsabilidades": [
-            "Analista de Nómina: Análisis de datos y manejo de grandes volúmenes de información: Estas habilidades son transferibles al desarrollo web, donde el análisis de datos es importante para la optimización de aplicaciones y la toma de decisiones.",
-            "Manejo de hojas de cálculo y aplicaciones de gestión: Esto demuestra tu capacidad para trabajar con herramientas de software y gestionar información, lo cual es útil en el desarrollo web.",
-            "Analista de Inventario: Gestión y control de inventarios: Esta experiencia demuestra tu capacidad para organizar y gestionar información, lo cual es útil en el desarrollo web para la gestión de bases de datos y la organización de proyectos.",
-            "Habilidades en hojas de calculo: el trabajo con estas herramientas, dan un fuerte indicio de la facilidad que tienes con las herramientas digitales.",
-            "Asistente de Piso de Ventas: Atención al cliente: Esta habilidad es fundamental en el desarrollo web, ya que implica comprender las necesidades de los usuarios y crear aplicaciones que satisfagan sus expectativas."
-          ]
-        }
-      ]
-    },
-    "parte3": {
-      "titulo": "Experiencia Administrativa y Técnica",
-      "contenido": [
-        {
-          "tipo": "Administrativa",
-          "experiencias": [
-            {
-              "cargo": "Analista de Nómina - Ministerio P.P. para la Energía Eléctrica (Enero 2022 - Febrero 2023)",
-              "responsabilidades": [
-                "Análisis de datos y manejo de grandes volúmenes de información.",
-                "Procesamiento y verificación de nóminas de más de 1000 empleados.",
-                "Uso de hojas de cálculo y aplicaciones de gestión."
-              ]
-            },
-            {
-              "cargo": "Analista de Inventario - VENSALUD, MPPS (Julio 2021 - Enero 2022)",
-              "responsabilidades": [
-                "Gestión y control de inventarios de suministros médicos.",
-                "Administración de espacios físicos.",
-                "Trabajo en equipo.",
-                "Uso de hojas de calculo."
-              ]
-            },
-            {
-              "cargo": "Asistente de Piso de Ventas - Farmatodo, C.A. (Noviembre 2019 - Julio 2021)",
-              "responsabilidades": [
-                "Atención al cliente.",
-                "Procesos administrativos de farmacia.",
-                "Control de activos.",
-                "Gestión de inventarios."
-              ]
-            }
-          ]
-        },
-        {
-          "tipo": "Técnica",
-          "experiencias": [
-            {
-              "cargo": "Jefe de la Unidad de Informática (encargado) - Fundación de Edificaciones y Dotaciones Educativas (Diciembre 2024 - Actualidad)",
-              "responsabilidades": [
-                "Administración y gestión de servidores.",
-                "Desarrollo y mantenimiento de servicios y aplicaciones.",
-                "Soporte técnico primario y secundario.",
-                "Desarrollo y mantenimiento de la página web de la institución."
-              ]
-            },
-            {
-              "cargo": "Coordinador de Servicios Tecnológicos - Ministerio P.P. para la Educación, Edúcate en Venezuela (Octubre 2023 - Actualidad)",
-              "responsabilidades": [
-                "Innovación en tecnologías y desarrollo de recursos educativos (GODOT, GDevelop, React).",
-                "Evaluación y gestión de infraestructura informática.",
-                "Supervisión de equipo multidisciplinario.",
-                "Desarrollo y administración de aplicaciones web (JavaScript, React).",
-                "Creación de recursos educativos en diversas tecnologías y motores gráficos (GODOT y GDevelop)."
-              ]
-            }
-          ]
-        }
-      ]
-    }
+  "parte1": {
+    "titulo": "Presentación Formal",
+    "contenido": [
+      "Soy Víctor García, un profesional en formación con un enfoque proactivo hacia la tecnología, la gestión de servicios informáticos, el desarrollo de soluciones innovadoras y la optimización de procesos. En mi desarrollo profesional, he adquirido competencias en la administración de infraestructuras tecnológicas, el desarrollo de aplicaciones web y la creación de recursos educativos interactivos.",
+      "Poseo conocimientos en la administración de infraestructuras tecnológicas, donde he implementado soluciones básicas y escalables para garantizar el funcionamiento óptimo de los sistemas. Mi dominio incluye la gestión de servidores con sistemas operativos Linux.",
+      "En el área del desarrollo de aplicaciones web, mi experiencia se centra en el diseño y desarrollo front-end que responden a las necesidades de los usuarios.",
+      "Utilizo metodologías ágiles y herramientas de desarrollo modernas para crear aplicaciones web dinámicas y escalables. Además, poseo conocimientos en la creación de interfaces gráficas de usuario (GUI).",
+      "La programación y el diseño de interfaces gráficas son áreas que me apasionan particularmente. Me especializo en la creación de interfaces intuitivas y funcionales que mejoran la experiencia del usuario y facilitan la interacción con las aplicaciones.",
+      "Mi compromiso con la excelencia se refleja en cada proyecto que emprendo, donde aplico mis conocimientos técnicos y mi creatividad para alcanzar los objetivos establecidos.",
+      "En este portafolio, encontrará una selección de mis proyectos académicos y personales, acompañados de capturas de pantalla y enlaces a los repositorios de GitHub. Le invito a explorar mi trabajo y a descubrir cómo puedo contribuir al logro de sus objetivos tecnológicos.",
+      "Estoy a su disposición para colaborar en proyectos innovadores."
+    ]
+  },
+  "parte2": {
+    "titulo": "Experiencia Profesional",
+    "contenido": [
+      {
+        "cargo": "Jefe de la Unidad de Informática (encargado) - Fundación de Edificaciones y Dotaciones Educativas (Diciembre 2024 - Actualidad)",
+        "responsabilidades": [
+          {
+            "titulo": "Administración y gestión de servidores",
+            "descripcion": [
+              "Como Jefe de la Unidad de Informática (encargado), mis responsabilidades abarcan un amplio espectro de tareas técnicas y de gestión, asegurando el funcionamiento óptimo de la infraestructura tecnológica de la institución.",
+              "En el ámbito de la administración y gestión de servidores, me dedico a la implementación y configuración de sistemas operativos Linux, garantizando la estabilidad y seguridad de los servidores."
+            ]
+          },
+          {
+            "titulo": "Desarrollo y mantenimiento de servicios y aplicaciones",
+            "descripcion": [
+              "Participo activamente en todas las fases del ciclo de vida del desarrollo de software. Esto incluye el análisis de requerimientos y el diseño de soluciones de software, donde colaboro con las diferentes gerencias y unidades para entender sus necesidades y proponer soluciones tecnológicas eficientes.",
+              "El desarrollo de aplicaciones web es otra de mis responsabilidades clave (la que más disfruto), donde utilizo lenguajes de programación y frameworks modernos para crear aplicaciones robustas y escalables.",
+              "El mantenimiento de aplicaciones existentes también es fundamental, lo que implica la corrección de errores, la resolución de problemas técnicos, la actualización de funcionalidades y la documentación del código y los procedimientos de mantenimiento."
+            ]
+          },
+          {
+            "titulo": "Desarrollo y mantenimiento de la página web de la institución",
+            "descripcion": [
+              "Finalmente, el desarrollo y mantenimiento de la página web de la institución es una de mis principales responsabilidades. Me encargo del desarrollo de la página web utilizando HTML, CSS, JavaScript y frameworks modernos como React, Next y Tailwind CSS. Esto implica la implementación de funcionalidades y características que mejoren la experiencia del usuario, así como la optimización del rendimiento y la accesibilidad de la página web. Además, me aseguro de que la página web esté siempre actualizada y funcionando correctamente, realizando tareas de mantenimiento y resolución de problemas técnicos."
+            ]
+          }
+        ]
+      },
+      {
+        "cargo": "Coordinador de Servicios Tecnológicos en el proyecto presidencial 'Edúcate en Venezuela' - Ministerio P.P. para la Educación, (Octubre 2023 - Actualidad)",
+        "responsabilidades": [
+          "Gestión integral de la infraestructura informática es mi principal responsabilidad.",
+          "Mi labor se centra en garantizar el funcionamiento óptimo y la disponibilidad constante de los sistemas tecnológicos que sustentan las plataformas educativas. Esto implica una supervisión exhaustiva de la infraestructura, desde la evaluación del rendimiento de los servidores y redes hasta la participación en mesas de trabajo para la implementación de estrategias de optimización y seguridad. La gestión de la infraestructura se extiende a la planificación, implementación y mantenimiento de los recursos tecnológicos esenciales para el desarrollo y la entrega de recursos educativos. Esto incluye el seguimiento y control de la gestión que realiza el personal a cargo de servidores, bases de datos, sistemas de almacenamiento y redes de comunicación.",
+          "Mi enfoque se basa en la identificación y resolución proactiva de problemas de rendimiento, garantizando así la eficiencia y la continuidad operativa de las plataformas educativas.",
+          "Mi rol implica una colaboración estrecha con diversos equipos, asegurando la integración y compatibilidad de los sistemas.",
+          "Mi objetivo es asegurar que la infraestructura informática esté alineada con los objetivos estratégicos del ministerio y que cumpla con los estándares de calidad y seguridad requeridos. Además de la gestión técnica, participo en la evaluación y selección de nuevas tecnologías. Esto implica la realización de estudios de viabilidad.",
+          "Siempre apuntando a asegurar que la institución cuente con los recursos tecnológicos necesarios para cumplir con su misión y ofrecer servicios educativos de calidad."
+        ]
+      },
+      {
+        "cargo": "Experiencias adicionales",
+        "responsabilidades": [
+          "Análisis de datos y manejo de grandes volúmenes de información: Mi trayectoria profesional se complementa con experiencias adicionales que, aunque no directamente relacionadas con el desarrollo web, han fortalecido mis habilidades y me han proporcionado una perspectiva valiosa.",
+          "Como Analista de Nómina, desarrollé una sólida capacidad para el análisis de datos y el manejo de grandes volúmenes de información. Esta experiencia me ha permitido comprender la importancia del análisis de datos en la toma de decisiones, una habilidad transferible al desarrollo web, donde la optimización de aplicaciones y la mejora de la experiencia del usuario dependen del análisis de datos precisos. Además, el manejo de hojas de cálculo y aplicaciones de gestión me ha proporcionado una sólida base en el uso de herramientas de software, lo cual es fundamental en el desarrollo web para la gestión de proyectos y la organización de la información.",
+          "Analista de Inventario: Mi experiencia como Analista de Inventario también ha sido muy valiosa. La gestión y el control de inventarios me han permitido desarrollar habilidades en la organización y gestión de información, lo cual es esencial en el desarrollo web para la gestión de bases de datos y la organización de proyectos complejos. La capacidad de organizar y gestionar grandes cantidades de información es fundamental para el éxito en el desarrollo web, donde la gestión de datos y la organización de proyectos son cruciales. En ambas experiencias, el dominio de las hojas de cálculo ha sido fundamental. El trabajo con estas herramientas me ha permitido desarrollar una gran facilidad para el uso de herramientas digitales, lo cual es esencial en el desarrollo web, donde se utilizan una amplia variedad de herramientas y tecnologías. Esta facilidad para el uso de herramientas digitales me permite adaptarme rápidamente a nuevas tecnologías y aprender nuevas habilidades con facilidad.",
+          "Asistente de Piso de Ventas: Mi experiencia como Asistente de Piso de Ventas me permitió desarrollar una habilidad crucial en el mundo del desarrollo web: la atención al cliente. En este rol, aprendí a comprender las necesidades y expectativas de los clientes, a comunicarme de manera efectiva y a resolver problemas de manera rápida y eficiente. Estas habilidades son directamente transferibles al desarrollo web, donde la comprensión de las necesidades de los usuarios es esencial para crear aplicaciones que satisfagan sus expectativas. En el desarrollo web, la atención al cliente se traduce en la creación de interfaces intuitivas y fáciles de usar, en la implementación de funcionalidades que resuelvan los problemas de los usuarios y en la prestación de un soporte técnico eficiente. La capacidad de ponerme en el lugar del usuario y de comprender sus necesidades me permite crear aplicaciones que sean realmente útiles y valiosas. Además, mi experiencia en atención al cliente me ha enseñado la importancia de la comunicación clara y efectiva. En el desarrollo web, esto se traduce en la capacidad de comunicarme con los usuarios de manera clara y concisa, tanto a través de la interfaz de la aplicación como a través de otros canales de comunicación. La comunicación efectiva es esencial para garantizar que los usuarios comprendan cómo utilizar la aplicación y para resolver cualquier problema que puedan tener."
+        ]
+      }
+    ]
+  },
+  "parte3": {
+    "titulo": "Comparación entre experiencias Administrativas y Técnicas",
+    "contenido": [
+      {
+        "tipo": "Administrativa",
+        "experiencias": [
+          {
+            "cargo": "Analista de Nómina - Ministerio P.P. para la Energía Eléctrica (Enero 2022 - Febrero 2023)",
+            "responsabilidades": [
+              "Como Analista de Nómina en el Ministerio P.P. para la Energía Eléctrica, desempeñé un papel crucial en la gestión de la nómina más amplia que contaba con más de 1000 empleados. Esta función requería un análisis meticuloso de datos y el manejo de grandes volúmenes de información, asegurando la precisión y puntualidad en el procesamiento y verificación de las nóminas. Además, adquirí una sólida experiencia en el uso de hojas de cálculo y aplicaciones de gestión, lo que me permitió optimizar los procesos y mejorar la eficiencia en la gestión de la nómina.",
+              "Análisis de datos y manejo de grandes volúmenes de información.",
+              "Procesamiento y verificación de nóminas de más de 1000 empleados.",
+              "Uso de hojas de cálculo y aplicaciones de gestión."
+            ]
+          },
+          {
+            "cargo": "Analista de Inventario - VENSALUD, MPPS (Julio 2021 - Enero 2022)",
+            "responsabilidades": [
+              "Gestión y control de inventarios de suministros médicos.",
+              "Administración de espacios físicos.",
+              "Trabajo en equipo.",
+              "Uso de hojas de cálculo."
+            ]
+          },
+          {
+            "cargo": "Asistente de Piso de Ventas - Farmatodo, C.A. (Noviembre 2019 - Julio 2021)",
+            "responsabilidades": [
+              "Atención al cliente.",
+              "Procesos administrativos de farmacia.",
+              "Control de activos.",
+              "Gestión de inventarios."
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "Técnica",
+        "experiencias": [
+          {
+            "cargo": "Jefe de la Unidad de Informática (encargado) - Fundación de Edificaciones y Dotaciones Educativas (Diciembre 2024 - Actualidad)",
+            "responsabilidades": [
+              "Administración y gestión de servidores.",
+              "Desarrollo y mantenimiento de servicios y aplicaciones.",
+              "Soporte técnico primario y secundario.",
+              "Desarrollo y mantenimiento de la página web de la institución."
+            ]
+          },
+          {
+            "cargo": "Coordinador de Servicios Tecnológicos - Ministerio P.P. para la Educación, Edúcate en Venezuela (Octubre 2023 - Actualidad)",
+            "responsabilidades": [
+              "Innovación en tecnologías y desarrollo de recursos educativos (GODOT, GDevelop, React).",
+              "Evaluación y gestión de infraestructura informática.",
+              "Supervisión de equipo multidisciplinario.",
+              "Desarrollo y administración de aplicaciones web (JavaScript, React).",
+              "Creación de recursos educativos en diversas tecnologías y motores gráficos (GODOT y GDevelop)."
+            ]
+          }
+        ]
+      }
+    ]
   }
-  
+}

@@ -25,23 +25,4 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
 export default Layout;
 
-{
-  /* 
-   <main className="w-full min-h-screen bg-stone-900 text-white pt-12">
-      <Header />
-      <div className="absolute w-full md:w-screen h-1/3 md:h-screen bottom-0 md:top-0 left-0 overflow-hidden rotate- md:rotate-0 ">
-        <div className="absolute top-0 md:-left-20 w-full md:w-[150vw] h-full z-0  md:rotate-20">
-          // Esta animacion se desborda! por ello se coloco doble contenedor para poder estilar de forma correcta 
-          <Threads
-            amplitude={2}
-            distance={0.5}
-            enableMouseInteraction={false}
-          />
-        </div>
-      </div>
-      <section className="container mx-auto">{children}</section>
-    </main>
-  
-  
-  */
-}
+
