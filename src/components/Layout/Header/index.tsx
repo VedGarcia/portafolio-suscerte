@@ -14,16 +14,15 @@ const Header: React.FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full h-14 flex justify-between font-[VictorMono-Light] absolute top-0 left-0 z-20">
+    <header className="w-full h-12 flex flex-row-reverse font-[VictorMono-Light] fixed top-0 left-0 z-20  md:justify-between md:w-full">
       {isOpen ? (
         <MenuMobile
           routes={dataRoutes}
           isOpen={isOpen}
-          onToggleMenu={toggleMenu} // Corregido el nombre de la prop
+          onToggleMenu={toggleMenu}
         />
       ) : (
-        <button className="p-4 md:hidden" onClick={toggleMenu}>
-          {/* Usamos toggleMenu aqui tambien para que el boton cierre el menu */}
+        <button className="p-2 md:hidden text-amber-200" onClick={toggleMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

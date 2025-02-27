@@ -35,11 +35,11 @@ const About: React.FC = () => {
 
   return (
     <Layout>
-      <section className="w-full h-[90vh] grid grid-cols-5 grid-rows-5 gap-2 overflow-hidden">
-        <div className="col-span-5 pt-8">
-          <h1 className="text-6xl font-[Ananda] text-sky-300">Sobre mí</h1>
+      <section className="w-full h-full flex flex-col lg:h-[90vh] lg:grid lg:grid-cols-5 lg:grid-rows-5 lg:gap-2 lg:overflow-hidden">
+        <div className="w-full lg:col-span-5 pt-8 md:pt-14 p-4">
+          <h1 className="text-4xl md:text-6xl font-[Ananda] text-sky-300">Sobre mí</h1>
         </div>
-        <nav className="row-span-4 col-start-5 row-start-2 z-20">
+        <nav className="flex space-x-4 overflow-x-auto whitespace-nowrap w-full lg:row-span-4 lg:col-start-5 lg:row-start-2 z-10 lg:space-x-0 lg:flex-col lg:overflow-hidden lg:whitespace-break-spaces">
           {Object.keys(info).map((key) => (
             <button
               key={key}
@@ -56,8 +56,8 @@ const About: React.FC = () => {
             </button>
           ))}
         </nav>
-        <div className="px-4 col-span-4 row-span-4 row-start-2 overflow-auto font-[VictorMono-light] text-amber-300 bg-stone-900/80 relative rounded-lg">
-          <h3 className="text-2xl font-bold py-4 text-sky-300 sticky top-0 bg-blend-color-dodge bg-stone-900">
+        <div className="px-4 md:col-span-4 row-span-4 row-start-2 overflow-auto font-[VictorMono-light] text-amber-300 bg-stone-900/80 relative rounded-lg">
+          <h3 className="text-xl md:text-2xl font-bold py-4 text-sky-300 sticky top-0 bg-blend-color-dodge bg-stone-900">
             {info[selectedPart].titulo}
           </h3>
           {renderContent(info[selectedPart].contenido)}
@@ -73,19 +73,19 @@ export default About;
 const renderContent = (content: Parte["contenido"]) => {
   if (typeof content === "string") {
     // Si el contenido es una cadena de texto
-    return <p className="px-6">{content}</p>;
+    return <p className="px-6 text-xs md:text-base ">{content}</p>;
   } else if (Array.isArray(content)) {
     if (isExperienciaArray(content)) {
       // Es un arreglo de Experiencia[]
       return content.map((item, index) => (
         <div key={index} className="mb-6">
-          <h4 className="text-lg font-bold mb-2 px-4">{item.tipo}</h4>
+          <h4 className="text-base md:text-lg font-bold mb-2 px-4 text-amber-200">{item.tipo}</h4>
           {item.experiencias.map((exp, idx) => (
             <div key={idx} className="mb-4">
-              <h5 className="text-md font-semibold px-6">{exp.cargo}</h5>
+              <h5 className="text-sm md:text-base font-semibold px-6 pb-4 text-amber-400 ">{exp.cargo}</h5>
               <ul className="list-disc list-inside text-sky-200 ">
                 {exp.responsabilidades.map((resp, i) => (
-                  <li className="px-8" key={i}>{resp}</li>
+                  <li className="px-8 text-xs md:text-base" key={i}>{resp}</li>
                 ))}
               </ul>
             </div>
@@ -96,10 +96,10 @@ const renderContent = (content: Parte["contenido"]) => {
       // Es un arreglo de Responsabilidad[]
       return content.map((item, index) => (
         <div key={index} className="mb-4">
-          <h3 className="text-md font-semibold px-4">{item.cargo}</h3>
+          <h3 className="text-sm md:text-lg font-semibold px-4 pb-4 text-sky-400">{item.cargo}</h3>
           <ul className="list-disc list-inside text-sky-200">
             {item.responsabilidades.map((resp, idx) => (
-              <li className='px-8' key={idx}>{resp}</li>
+              <li className='px-8 text-xs md:text-base' key={idx}>{resp}</li>
             ))}
           </ul>
         </div>

@@ -4,7 +4,7 @@ import Greeting from '../../components/Greeting';
 const Home: React.FC = () => {
   return (
    <Layout>
-        <Greeting  />
+    <Greeting />
    </Layout>
   );
 }

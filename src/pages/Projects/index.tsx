@@ -21,12 +21,10 @@ interface Project {
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
-  const [isLoading, setIsLoading] = useState<boolean>(true); // Estado de carga
   const [error, setError] = useState<string | null>(null); // Estado de error
 
   useEffect(() => {
     const fetchData = async () => {
-      setIsLoading(true);
       setError(null);
       try {
         const result = await getProjects.getAll();
@@ -53,26 +51,17 @@ const Projects: React.FC = () => {
       } catch (err) {
         console.error("Error fetching data: ", err);
         setError("Error fetching data.");
-      } finally {
-        setIsLoading(false);
-      }
+      } 
     };
     fetchData();
   }, []);
 
-  if (isLoading) {
-    return (
-      <Layout>
-        <h1 className="text-6xl font-[Ananda] text-sky-300 pt-8">Proyectos</h1>
-        <p className="text-2xl animate-pulse">Cargando proyectos...</p>
-      </Layout>
-    );
-  }
+
 
   if (error) {
     return (
       <Layout>
-        <h1 className="text-6xl font-[Ananda] text-sky-300 pt-8">Proyectos</h1>
+        <h1 className="text-6xl font-[Ananda] text-sky-300 ">Proyectos</h1>
         <p className="text-2xl text-red-500">Error: {error}</p>
       </Layout>
     );
@@ -80,8 +69,10 @@ const Projects: React.FC = () => {
 
   return (
     <Layout>
-      <div className="pb-12">
-        <h1 className="text-6xl font-[Ananda] text-sky-300 pt-8">Proyectos</h1>
+      <div className="py-8 p-4 md:py-12 md:p-8 ">
+        <h1 className="text-4xl md:text-6xl font-[Ananda] text-sky-300 ">
+          Proyectos
+        </h1>
       </div>
       <Masonry data={projects} />
     </Layout>

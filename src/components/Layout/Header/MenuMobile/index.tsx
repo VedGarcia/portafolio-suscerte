@@ -11,13 +11,13 @@ interface MenuMobileProps extends React.PropsWithChildren {
 
 const MenuMobile: React.FC<MenuMobileProps> = ({ routes, isOpen, onToggleMenu }) => {
   if (!isOpen) {
-    return null; // No renderizar si isOpen es false
+    return null; 
   }
 
   return (
-    <section className="w-full h-screen bg-stone-900 absolute top-0 left-0 z-40">
-      <div>
-        <button className="absolute top-4 right-4 p-4" onClick={onToggleMenu}>
+    <section className="w-full h-screen bg-amber-900/40 absolute top-0 left-0 z-40 flex-row-reverse" onClick={onToggleMenu}>
+      <div className="w-3/5 h-full bg-stone-800 absolute top-0 right-0 py-12 z-50" >
+        <button className="absolute top-2 right-2 p-2 text-amber-200" onClick={onToggleMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -34,7 +34,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({ routes, isOpen, onToggleMenu })
           </svg>
         </button>
         {routes.map((route, index) => (
-          <a key={index} href={route.to} className="block p-4 text-white">
+          <a key={index} href={route.to} className="block p-4 text-sky-300">
             {route.label}
           </a>
         ))}
