@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 interface RouteItem {
   to: string;
   label: string;
@@ -34,9 +35,9 @@ const MenuMobile: React.FC<MenuMobileProps> = ({ routes, isOpen, onToggleMenu })
           </svg>
         </button>
         {routes.map((route, index) => (
-          <a key={index} href={route.to} className="block p-4 text-sky-300">
+          <Link key={index} to={route.to} className="block p-4 text-sky-300">
             {route.label}
-          </a>
+          </Link>
         ))}
       </div>
     </section>
