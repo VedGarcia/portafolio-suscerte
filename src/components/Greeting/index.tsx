@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 
 const Greeting = () => {
   return (
-    <section className="h-[90vh] w-full flex flex-col justify-center md:justify-end items-start p-8 md:p-12">
+    <section className="h-[90vh] w-full flex flex-col justify-center md:justify-end items-start p-8 md:p-12 relative">
      
       <div className="w-full relative z-10" >
         <p className="text-xl md:text-5xl text-amber-200 font-[Ananda]">Hola! Soy</p>
