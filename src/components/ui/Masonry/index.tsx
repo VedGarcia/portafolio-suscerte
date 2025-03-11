@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { animated, useTransition, SpringValue } from '@react-spring/web';
 
 interface MasonryItem {
